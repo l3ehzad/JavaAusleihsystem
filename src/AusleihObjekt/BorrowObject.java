@@ -12,6 +12,10 @@ public abstract class BorrowObject {
         this.usePurpose = usePurpose;
     }
 
+    public void setBorrowDate(Date borrowDate) {
+        this.borrowDate = borrowDate;
+    }
+
     @Override
     public String toString() {
         return "Device Info: [" +

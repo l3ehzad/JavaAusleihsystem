@@ -35,6 +35,7 @@ public class Ausleihsystem {
 
         //adding more info for PC:
         pc1.setUsePurpose("IG.2");
+        /*pc1.setBorrowDate(2021, 02, 02,);*/       //HOW TO ADD DATE? XXXXXXX
 
         //creating List
         List<Ausleihsystem> listOfBorrow = new ArrayList<>();
