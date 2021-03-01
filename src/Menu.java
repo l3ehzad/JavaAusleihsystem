@@ -123,14 +123,15 @@ public class Menu {
             //Create PC Object:
 
 
+            BorrowObject b = null;
             switch (choice1) {
                 case 1:
-                    BorrowObject b1 = new PC(deviceName, c1, purpose);
-                    System.out.println(b1.toString() + " has been added.\n");
+                    b = new PC(deviceName, c1, purpose);
+                    System.out.println(b.toString() + " has been added.\n");
                     break;
                 case 2:
-                    BorrowObject b2 = new Peripheral(deviceName, c1, purpose);
-                    System.out.println(b2.toString() + " has been added.\n");
+                    b = new Peripheral(deviceName, c1, purpose);
+                    System.out.println(b.toString() + " has been added.\n");
                     break;
                 case 3:
                     System.out.println("You'll head back to main menu.\n");
@@ -187,20 +188,23 @@ public class Menu {
                 System.out.println("Error with entering ID number.");
             }
 
+            Person.Person p = null;
             switch (choice2){
                 case 1:
-                    Person.Person p1 = new Student(lastname, name, idNumber);          //it has to be from the super class "Person" in order later to add to ArrayList. cause arrayList knows only items of super class.
-                    System.out.println(p1.toString()+" has been added.");
+                    p = new Student(lastname, name, idNumber);          //it has to be from the super class "Person" in order later to add to ArrayList. cause arrayList knows only items of super class.
+                    System.out.println(p.toString()+" has been added.");
                     break;
                 case 2:
-                    Person.Person p2 = new Mitarbeiter(lastname, name, idNumber);
-                    System.out.println(p2.toString()+" has been added.");
+                    p = new Mitarbeiter(lastname, name, idNumber);
+                    System.out.println(p.toString()+" has been added.");
                     break;
                 case 3:
                     System.out.println("You'll head back to main menu.\n");
                     runMenu();
                     break;
                 }
+
+        Ausleihsystem a = new Ausleihsystem(p, b);
 
             //Adding info to our ArrayList, which has already been created
 
