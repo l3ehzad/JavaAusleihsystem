@@ -2,9 +2,9 @@ package AusleihObjekt;
 
 import java.util.Calendar;
 
-public class PC extends BorrowObject{
+public class Peripheral extends BorrowObject{
 
-    public PC (String deviceName, Calendar borrowDate, String usePurpose){
+    public Peripheral (String deviceName, Calendar borrowDate, String usePurpose){
         super(deviceName, borrowDate, usePurpose);
 
 /*        setDeviceName(deviceName);
@@ -24,6 +24,6 @@ public class PC extends BorrowObject{
     @Override
     public void giveBack() {
         if (available==false)
-        available = true;
+            available = true;
     }
 }

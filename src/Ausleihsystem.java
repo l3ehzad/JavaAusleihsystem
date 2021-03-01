@@ -19,10 +19,32 @@ public class Ausleihsystem {
         }
     }
 
-
     //MAIN METHOD
     public static void main (String [] args){
+        Menu menu = new Menu();
+        menu.runMenu();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ************************************************************************************************************************
+
+        /*
         //define an object of Ausleihsystem class
         PC pc1 = new PC("PCL480");
         Student st1 = new Student("Voss", "Behz", "bv23");      //why set Student.Student to public?
@@ -36,7 +58,7 @@ public class Ausleihsystem {
         //adding more info for PC:
         pc1.setUsePurpose("IG.2");
         /*pc1.setBorrowDate(2021, 02, 02,);*/       //HOW TO ADD DATE? XXXXXXX
-
+/*
         //creating List
         List<Ausleihsystem> listOfBorrow = new ArrayList<>();
 
@@ -47,7 +69,7 @@ public class Ausleihsystem {
         //print objects of the list
         printTheList(listOfBorrow);
 
-
+*/
 
     }
 }
